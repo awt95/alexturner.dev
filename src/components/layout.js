@@ -30,9 +30,10 @@ const Layout = ({ children }) => (
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `0px 0px 0px 0px`,
+            padding: `0px 0px 1.45rem`,
             paddingTop: 0,
           }}
+        >
           <main>{children}</main>
           <footer>
             <div className="center">
@@ -40,6 +41,7 @@ const Layout = ({ children }) => (
               {` `}
               <a href="https://www.gatsbyjs.org">Gatsby</a>
             </div>
+
           </footer>
         </div>
       </>
