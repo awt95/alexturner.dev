@@ -18,6 +18,10 @@ html {
   flex-grow: 1;
 }
 
+li {
+  list-style: none; !important;
+}
+
 .subtitle {
   p.subtitle {
     font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;;
@@ -31,15 +35,17 @@ html {
       }
     }
   }
-  p.social_links {
-    ul {
-      list-style: none;
-      li {
-        margin-left: 10px;
-        display: inline-block;
-      }
+
+p.social_links {
+  ul {
+    list-style: none;
+    li {
+      margin-left: 10px;
+      display: inline-block;
     }
   }
+}
+
 }
 .projects {
   ul {
