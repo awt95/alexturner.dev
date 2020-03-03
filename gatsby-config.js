@@ -1,10 +1,11 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
+  //pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
-    title: `Gatsby React Bootstrap Starter`,
-    description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
-    author: `Billy Jacoby`,
+    title: `Alex Turner`,
+    description: `My personal website`,
+    author: `Alex Turner`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -15,6 +16,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

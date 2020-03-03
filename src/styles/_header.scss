@@ -1,0 +1,28 @@
+header {
+  h1 {
+    font-family: Roboto;
+  }
+  .subtitle{
+    font-family: Consolas;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline;
+      }
+    }
+  }
+  .socialLinks {
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline;
+      }
+      li:not(:first-child) {
+        padding-left: 10px;
+      }
+    }
+  }
+
+}
