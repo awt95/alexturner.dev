@@ -1,0 +1,52 @@
+$main-font: 'Arial';
+
+html {
+  font-family:  $main-font;
+}
+
+.center {
+  text-align: center;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
+.subtitle {
+  p.subtitle {
+    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;;
+    margin: 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+p.social_links {
+  ul {
+    list-style: none;
+    li {
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+}
+
+}
+.projects {
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
