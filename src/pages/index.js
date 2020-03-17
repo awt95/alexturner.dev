@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col, Container, Card, CardGroup, CardColumns, Button } from "react-bootstrap"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,7 +26,7 @@ const IndexPage = () => (
                   <Col></Col>
                   <Col>Status: In Development</Col>
                   <Col className="text-right text-muted">
-                    <Button className="btn-sm btn-secondary">View</Button>
+                  <a href="https://github.com/awt95/wikibot"><Button className="btn-sm btn-secondary">Github</Button></a>
                   </Col>
                 </Row>
               </Card.Footer>
@@ -35,14 +36,15 @@ const IndexPage = () => (
               <Card.Subtitle className="mb-2 text-muted">June 2018 - June 2019</Card.Subtitle>
               <Card.Body>
                 A student startup web application project. Allows students to outsource their
-                daily chores and tasks to other student looks to make money. Developed with Ruby on Rails.
+                daily chores and tasks to other student looks to make money.<br/>
+                Technologies: Ruby on Rails, Postgresql
               </Card.Body>
               <Card.Footer>
                 <Row>
                   <Col></Col>
                   <Col>Status: Demo Phase, Inactive</Col>
                   <Col className="text-right text-muted">
-                    <Button className="btn-sm btn-secondary">View</Button>
+                  <Link to="/project/wequestit"><Button className="btn-sm btn-secondary">View</Button></Link>
                   </Col>
                 </Row>
               </Card.Footer>
@@ -55,14 +57,14 @@ const IndexPage = () => (
                 The application performs quotation calculations, manages current and past orders,
                 and provides the entire business logic for the client. I was brought on as a freelance
                 developer to migrate database and logic from an outdated FoxPro solution.<br/>
-                Technologies used: C# .NET, SQL Server.
+                Technologies: C# .NET, SQL Server.
               </Card.Body>
               <Card.Footer>
                 <Row>
                   <Col></Col>
                   <Col>Status: Production</Col>
                   <Col className="text-right text-muted">
-                    <Button className="btn-sm btn-secondary">View</Button>
+                    <Link to="/project/etw"><Button className="btn-sm btn-secondary">View</Button></Link>
                   </Col>
                 </Row>
               </Card.Footer>
@@ -73,7 +75,7 @@ const IndexPage = () => (
               <Card.Body>
                 A web application to manage user bookings of resources in a school,
                 such as room bookings and IT resources. Client wanted to unify multiple existing systems
-                and allow for more control over privileges. Currently deployed in two local schools. <br/>
+                and allow for more control over privileges. <br/> Currently deployed in two local schools. <br/>
                 Technologies: PHP, MySQL.
               </Card.Body>
               <Card.Footer>
@@ -81,7 +83,7 @@ const IndexPage = () => (
                   <Col></Col>
                   <Col>Status: Deployed</Col>
                   <Col className="text-right text-muted">
-                    <Button className="btn-sm btn-secondary">View</Button>
+                  <Link to="/project/booker"><Button className="btn-sm btn-secondary">View</Button></Link>
                   </Col>
                 </Row>
               </Card.Footer>
